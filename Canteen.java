@@ -6,11 +6,11 @@ class Canteen{
 
 		// The MENU
 		System.out.println("===== \tM E N U\t =====");
-		System.out.println("1. Burger	- Php 15.00");
-		System.out.println("2. Turon	- Php 17.00");
-		System.out.println("3. Spaghetti	- Php 25.00");
-		System.out.println("4. Buko Juice	- Php 13.00");
-		System.out.println("5. Champorado	- Php 20.00");
+		System.out.println("1. Burger	- $70.00");
+		System.out.println("2. Turon	- $30.00");
+		System.out.println("3. Spaghetti	- $60.00");
+		System.out.println("4. Buko Juice	- $20.00");
+		System.out.println("5. Champorado	- $50.00");
 
 		// Variables
 		String studentOrNot, orderAgain;
@@ -36,7 +36,7 @@ class Canteen{
 								System.out.println("\nInvalid order! Please enter a valid item and quantity.\n");
 							}
 							else {
-								subtotal = 15.00 * quantity;
+								subtotal = 70.00 * quantity;
 							}
 							break; // to prevent execution of different cases.
 						case 2:
@@ -44,7 +44,7 @@ class Canteen{
 								System.out.println("\nInvalid order! Please enter a valid item and quantity.\n");
 							}
 							else {
-								subtotal = 17.00 * quantity;
+								subtotal = 30.00 * quantity;
 							}
 							break;
 						case 3:
@@ -52,7 +52,7 @@ class Canteen{
 								System.out.println("\nInvalid order! Please enter a valid item and quantity.\n");
 							}
 							else {
-								subtotal = 25.00 * quantity;
+								subtotal = 60.00 * quantity;
 							}
 							break;
 						case 4:
@@ -60,7 +60,7 @@ class Canteen{
 								System.out.println("\nInvalid order! Please enter a valid item and quantity.\n");
 							}
 							else {
-								subtotal = 13.00 * quantity;
+								subtotal = 20.00 * quantity;
 							}
 							break;
 						case 5:
@@ -68,7 +68,7 @@ class Canteen{
 								System.out.println("\nInvalid order! Please enter a valid item and quantity.\n");
 							}
 							else {
-								subtotal = 20.00 * quantity;
+								subtotal = 50.00 * quantity;
 							}
 							break;
 						default:
@@ -101,9 +101,9 @@ class Canteen{
 			}
 
 			// Printing Results
-			System.out.printf("\nSubtotal: Php %.2f%n", subtotal); // "%.2f%n" to display the nummbers with 2 decimal places.
-			System.out.printf("Discount: Php %.2f%n", discount);
-			System.out.printf("Order Total: Php %.2f%n", total);
+			System.out.printf("\nSubtotal: $%.2f%n", subtotal); // "%.2f%n" to display the nummbers with 2 decimal places.
+			System.out.printf("Discount: $%.2f%n", discount);
+			System.out.printf("Order Total: $%.2f%n", total);
 
 			// Asking the user to order again.
 			System.out.print("\nDo you want to order again? (Y/N): ");
@@ -123,9 +123,9 @@ class Canteen{
 		// Summary of Orders
 		System.out.println("\n===== \tORDER SUMMARY \t=====");
 		System.out.println("Total items: " + item);
-		System.out.printf("Total before discount: Php %.2f%n", beforeDiscount);
-		System.out.printf("Total discount: Php %.2f%n", totalDiscount);
-		System.out.printf("Final Amount: Php %.2f%n", afterDiscount);
+		System.out.printf("Total before discount: $%.2f%n", beforeDiscount);
+		System.out.printf("Total discount: $%.2f%n", totalDiscount);
+		System.out.printf("Final Amount: $%.2f%n", afterDiscount);
 		System.out.println("Thank you for ordering! :)\n");
 	}
 } 
