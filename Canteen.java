@@ -1,4 +1,3 @@
-// Scanner Class
 import java.util.Scanner;
 
 class Canteen{
@@ -30,7 +29,7 @@ class Canteen{
 					System.out.print("Enter quantity: ");
 					quantity = input.nextInt();
 
-				// Using the switch statement
+				// Using the switch statement for itemms.
 					switch (itemNum) {
 						case 1:
 							if (quantity > 10 || quantity < 1){
@@ -39,7 +38,7 @@ class Canteen{
 							else {
 								subtotal = 80.00 * quantity;
 							}
-							break; // The break statement only in the switch case to prevent execution from falling through into subsequent cases.
+							break; // to prevent execution of different cases.
 						case 2:
 							if (quantity > 10 || quantity < 1){
 								System.out.println("\nInvalid order! Please enter a valid item and quantity.\n");
@@ -102,7 +101,7 @@ class Canteen{
 			}
 
 			// Printing Results
-			System.out.printf("\nSubtotal: $%.2f%n", subtotal);
+			System.out.printf("\nSubtotal: $%.2f%n", subtotal); // "%.2f%n" to display the nummbers with 2 decimal places.
 			System.out.printf("Discount: $%.2f%n", discount);
 			System.out.printf("Order Total: $%.2f%n", total);
 
@@ -111,7 +110,7 @@ class Canteen{
 			orderAgain = input.next();
 
 			// For Summary of Orders
-			item += quantity;
+			item += quantity; // the quantity will add to the item until the do-while looop stops (or the user does not want to order again).
 			beforeDiscount += subtotal;
 			totalDiscount += discount;
 			afterDiscount += total;
@@ -130,6 +129,3 @@ class Canteen{
 		System.out.println("Thank you for ordering! :)\n");
 	}
 } 
-
-
-// :)
