@@ -129,4 +129,7 @@ class Canteen{
 		System.out.printf("Final Amount: $%.2f%n", afterDiscount);
 		System.out.println("Thank you for ordering! :)\n");
 	}
-}
+} 
+
+
+// :)
