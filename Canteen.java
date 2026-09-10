@@ -16,7 +16,7 @@ class Canteen{
 		// Variables
 		String studentOrNot, orderAgain;
 		int itemNum, quantity, item = 0;
-		double subtotal = 0, discount, total, beforeDiscount = 0, afterDiscount = 0, discountReduced = 0;
+		double subtotal = 0, discount, total, beforeDiscount = 0, afterDiscount = 0, totalDiscount = 0;
 
 		// Using the do-while loop to repeat the process when the user wants to order again. 
 		do {
@@ -113,7 +113,7 @@ class Canteen{
 			// For Summary of Orders
 			item += quantity;
 			beforeDiscount += subtotal;
-			discountReduced += discount;
+			totalDiscount += discount;
 			afterDiscount += total;
 
 		} while (orderAgain.equalsIgnoreCase("Y"));
@@ -125,7 +125,7 @@ class Canteen{
 		System.out.println("\n===== \tORDER SUMMARY \t=====");
 		System.out.println("Total items: " + item);
 		System.out.printf("Total before discount: $%.2f%n", beforeDiscount);
-		System.out.printf("Total discount: $%.2f%n", discountReduced);
+		System.out.printf("Total discount: $%.2f%n", totalDiscount);
 		System.out.printf("Final Amount: $%.2f%n", afterDiscount);
 		System.out.println("Thank you for ordering! :)\n");
 	}
