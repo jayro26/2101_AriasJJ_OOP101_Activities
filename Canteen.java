@@ -1,4 +1,4 @@
-// Scanner Library
+// Scanner Class
 import java.util.Scanner;
 
 class Canteen{
